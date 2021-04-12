@@ -54,5 +54,6 @@ class InteractiveRecord
   end 
   
   def self.find()
+  end 
   
 end
