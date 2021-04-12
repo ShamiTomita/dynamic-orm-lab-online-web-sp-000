@@ -53,6 +53,6 @@ class InteractiveRecord
     DB[:conn].execute(sql, name)
   end 
   
-  def self
+  def self.find()
   
 end
