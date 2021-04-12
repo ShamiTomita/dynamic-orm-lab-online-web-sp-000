@@ -55,10 +55,6 @@ class InteractiveRecord
   
   def self.find_by(hash)
     key, value = hash.first
-    # if value.is_a? String
-    #   value = "'#{value}'"
-    # end
-    # binding.pry
     sql = "SELECT * FROM #{self.table_name} WHERE #{key.to_s} = ?"
     DB[:conn].execute(sql, value)
   end
